@@ -1,0 +1,463 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>21</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>6</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>6</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.47</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.1</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">Authorization</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">Open_user_page</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">Search_user_and_control</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">Create_new_user</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult4">Search_user_and_delete</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult5">Logout</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">autorization.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Authorization</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/auth/login</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=section#page input[name='email']</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=section#page input[name='password']</td>
+	<td>demo</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=section#page button.btn-primary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=a[href $='/oc-panel/auth/logout']</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">open_user_page.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Open_user_page</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a[href='#collapseUser']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.panel-body a[title=Users]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.table-responsive table.table</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertLocation</td>
+	<td>http://demo.open-eshop.com/oc-panel/user</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">search_user.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Search_user_and_control</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/user</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>qwe</td>
+	<td>name</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>admin@gmail.com</td>
+	<td>email</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=input[name="search"]</td>
+	<td>${email}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>css=input[name="search"]</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>xpath=//div[@class='table-responsive']/table/tbody/tr</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=input[name="search"]</td>
+	<td>${name}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>css=input[name="search"]</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>xpath=//div[@class='table-responsive']/table/tbody/tr</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">create_user.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Create_new_user</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/user</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div#content a.btn-primary[title='New']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForPageToLoad</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>123</td>
+	<td>pwd</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=formorm_name</td>
+	<td>${name}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=formorm_email</td>
+	<td>${email}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=formorm_paypal_email</td>
+	<td>${email}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=formorm_password</td>
+	<td>${pwd}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=formorm[submit]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForPageToLoad</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=input.[name="search"]</td>
+	<td>${email}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>name=search</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTable</td>
+	<td>//div[@class='table-responsive']/table.1.1</td>
+	<td>${email}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeAttribute</td>
+	<td>xpath=//div[@id='content']//tbody/tr@id</td>
+	<td>my_id</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">delete_user.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Search_user_and_delete</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/user</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=tr#${my_id} a.index-delete</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.sweet-alert.showSweetAlert.visible</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.sweet-alert &gt; button.confirm</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>xpath=//tr[@id='${my_id}'] [@style='display: none;']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>xpath=//tr[@id='${my_id}']</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult5">logout.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">Logout</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.dropdown-toggle</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//ul[@class='dropdown-menu']/li[6]/a</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=section#page button.btn-primary</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/autorization.html
+info: Executing: |deleteAllVisibleCookies |  |  |
+info: Executing: |open | /oc-panel/auth/login |  |
+info: Executing: |type | css=section#page input[name=&apos;email&apos;] | demo@open-eshop.com |
+info: Executing: |type | css=section#page input[name=&apos;password&apos;] | demo |
+info: Executing: |click | css=section#page button.btn-primary |  |
+info: Executing: |waitForElementPresent | css=a[href $=&apos;/oc-panel/auth/logout&apos;] |  |
+info: Starting test /selenium-server/tests/open_user_page.html
+info: Executing: |open | /oc-panel |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=a[href=&apos;#collapseUser&apos;] |  |
+info: Executing: |click | css=div.panel-body a[title=Users] |  |
+info: Executing: |waitForElementPresent | css=div.table-responsive table.table |  |
+info: Executing: |assertLocation | http://demo.open-eshop.com/oc-panel/user |  |
+info: Starting test /selenium-server/tests/search_user.html
+info: Executing: |open | /oc-panel/user |  |
+info: Executing: |store | qwe | name |
+info: Executing: |store | admin@gmail.com | email |
+info: Executing: |type | css=input[name=&quot;search&quot;] | ${email} |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |sendKeys | css=input[name=&quot;search&quot;] | ${KEY_ENTER} |
+info: Executing: |waitForElementNotPresent | xpath=//div[@class=&apos;table-responsive&apos;]/table/tbody/tr |  |
+info: Executing: |type | css=input[name=&quot;search&quot;] | ${name} |
+info: Executing: |sendKeys | css=input[name=&quot;search&quot;] | ${KEY_ENTER} |
+info: Executing: |waitForElementNotPresent | xpath=//div[@class=&apos;table-responsive&apos;]/table/tbody/tr |  |
+info: Starting test /selenium-server/tests/create_user.html
+info: Executing: |open | /oc-panel/user |  |
+info: Executing: |click | css=div#content a.btn-primary[title=&apos;New&apos;] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForPageToLoad | 10000 |  |
+info: Executing: |store | 123 | pwd |
+info: Executing: |type | id=formorm_name | ${name} |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=formorm_email | ${email} |
+info: Executing: |type | id=formorm_paypal_email | ${email} |
+info: Executing: |type | id=formorm_password | ${pwd} |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | name=formorm[submit] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForPageToLoad | 10000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | css=input.[name=&quot;search&quot;] | ${email} |
+info: Executing: |sendKeys | name=search | ${KEY_ENTER} |
+info: Executing: |waitForTable | //div[@class=&apos;table-responsive&apos;]/table.1.1 | ${email} |
+info: Executing: |storeAttribute | xpath=//div[@id=&apos;content&apos;]//tbody/tr@id | my_id |
+info: Starting test /selenium-server/tests/delete_user.html
+info: Executing: |open | /oc-panel/user |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=tr#${my_id} a.index-delete |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=div.sweet-alert.showSweetAlert.visible |  |
+info: Executing: |click | css=div.sweet-alert &gt; button.confirm |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | xpath=//tr[@id=&apos;${my_id}&apos;] [@style=&apos;display: none;&apos;] |  |
+info: Executing: |refresh |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementNotPresent | xpath=//tr[@id=&apos;${my_id}&apos;] |  |
+info: Starting test /selenium-server/tests/logout.html
+info: Executing: |open | /oc-panel/ |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=a.dropdown-toggle |  |
+info: Executing: |click | //ul[@class=&apos;dropdown-menu&apos;]/li[6]/a |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=section#page button.btn-primary |  |
+</pre></body></html>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.open-eshop.com/" />
+<title>Create_new_user</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create_new_user</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/oc-panel/user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#content a.btn-primary[title='New']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>123</td>
+	<td>pwd</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=formorm_name</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=formorm_email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=formorm_paypal_email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=formorm_password</td>
+	<td>${pwd}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=formorm[submit]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.[name=&quot;search&quot;]</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=search</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>//div[@class='table-responsive']/table.1.1</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>xpath=//div[@id='content']//tbody/tr@id</td>
+	<td>my_id</td>
+</tr>
+</tbody></table>
+</body>
+</html>
